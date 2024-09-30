@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+/* Navbar */
+.navbar {
+  background-color: #1f1f1f; 
+  color: #fff; 
+  width: 100%;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-superior {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 10px 20px; 
+}
+
+.navbar-titulo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f0db4f; 
+  margin: 0; 
+}
+
+.buscador-navbar {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 20px;
+  background-color: #333; 
+  color: white; 
+  font-size: 16px; 
+  outline: none; 
+  width: 50%; 
+}
+
+.carrito {
+  position: relative; 
+  margin-left: 20px; 
+}
+
+.carrito-cantidad {
+  position: absolute; 
+  top: -8px; 
+  right: -8px; 
+  background-color: #ff4b4b; 
+  color: white; 
+  border-radius: 50%; 
+  width: 20px; 
+  height: 20px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  font-size: 12px; 
+  font-weight: bold; 
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+.carrito-icono {
+  display: inline-block;
+  background-color: #333; 
+  padding: 8px; 
+  border-radius: 50%; 
+  color: #f0db4f; 
+  font-size: 24px; 
+  transition: all 0.3s ease; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+  cursor: pointer; 
+}
+
+.carrito-icono:hover {
+  background-color: #f0db4f; 
+  color: #333; 
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); 
+  transform: scale(1.1); 
+}
+
+.carrito-icono:active {
+  transform: scale(1); 
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+.navbar-inferior {
+  display: flex; 
+  justify-content: center; 
+  padding: 10px 20px; 
+  background-color: #333; 
+}
+
+.navbar-menu-izquierda {
+  display: flex; 
+}
+
+.navbar-menu-list {
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+  display: flex; 
+  justify-content: center; 
+}
+
+.navbar-menu-item {
+  margin: 0 15px; 
+}
+
+.navbar-menu-item-link {
+  color: #f0db4f; 
+  text-decoration: none; 
+  font-size: 18px; 
+}
+
+.navbar-menu-item-link:hover {
+  color: #fff; 
+}
+
+.navbar-menu-derecha {
+  margin-left: 20px; 
+}
+
+
+
