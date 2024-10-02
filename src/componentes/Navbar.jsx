@@ -6,7 +6,7 @@ import { faCartShopping } from "@fortawesome/free-solid-svg-icons/faCartShopping
 const Navbar = () =>{
 
     return(
-        <div className="navbar">
+        <nav className="navbar">
            <div className="navbar-superior">
             <h1 className="navbar-titulo">NextGen Tech</h1>
             <input type="text" className="buscador-navbar" id="buscador" placeholder="Buscar productos"/>
@@ -29,7 +29,7 @@ const Navbar = () =>{
                 <a className="navbar-menu-item-link" href="">Favoritos</a>
             </div>
            </div>
-        </div>
+        </nav>
     )
 
 }
