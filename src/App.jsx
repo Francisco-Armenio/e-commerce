@@ -1,15 +1,21 @@
-import { useState } from 'react'
 import './App.css'
 import { Navbar } from './componentes/Navbar'
-import Ejemplocontador from './ejemplos/Ejemplocontador'
+import ItemCount from './ItemCount/ItemCount'
+import ItemListContainer from './ItemListContainer/ItemListContainer'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
+  const agregarAlCarrito = (count) =>{
+    console.log(count)
+  }
+
 
   return (
     <div>
       <Navbar/>
-      <Ejemplocontador />
+      <ItemCount stock={5} agregarAlCarrito={agregarAlCarrito} />
+      <ItemListContainer />
+      
     </div>
   )
 }
