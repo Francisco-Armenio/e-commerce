@@ -1,7 +1,7 @@
 const productos = [
     {
         id: 1,
-        nombre: "jaja",
+        nombre: "hola",
         descripcion:"",
         caracteristicas:"hola",
         precio: 100,
@@ -46,7 +46,7 @@ const obtenerProductos = () =>{
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve(productos)
-        }, 10)
+        }, 2000)
     })
 }
 
