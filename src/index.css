@@ -122,6 +122,35 @@
   margin-left: 20px; 
 }
 
+/*Cargando*/
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 98vw;
+  height: 100vh;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #ccc; 
+  border-top-color: #3498db; 
+  border-radius: 50%;
+  animation: spin 2s ease-in-out infinite; 
+  margin-bottom: 20px; 
+}
+
+.loading p {
+  font-size: 18px;
+  color: #555; 
+}
+
+
 /*card de productos */
 .product-container {
   display: flex;

@@ -1,24 +1,33 @@
-import { useEffect, useState } from "react"
-import obtenerProductos from "../data/productos.js"
-import ItemList from "./ItemList.jsx"
+import { useEffect, useState } from "react";
+import obtenerProductos from "../data/productos.js";
+import ItemList from "./ItemList.jsx";
+import useLoading from "../hooks/useLoading.jsx";
+import ComponenteLoading from "../hooks/ComponenteLoading.jsx";
 
 const ItemListContainer = () => {
-    const [productos, setProductos] = useState([])
+  const [productos, setProductos] = useState([]);
+  const { cargando, mostrarCargando, ocultarCargando, pantallaDeCarga } = useLoading();
 
+  useEffect(() => {
+    mostrarCargando(); 
 
-    useEffect(() =>{
-        obtenerProductos()
-        .then((respuesta) => {
-            setProductos(respuesta);
-        })
-    })
+    obtenerProductos()
+      .then((respuesta) => {
+        setProductos(respuesta); 
+      })
+      .finally(() => {
+        ocultarCargando(); 
+      });
+  }, []);
+
+  console.log(cargando); 
 
 
   return (
     <div>
-        <ItemList productos={productos} />
+      {cargando ? <ComponenteLoading/> : <ItemList productos={productos} />}
     </div>
-  )
-}
+  );
+};
 
-export default ItemListContainer
+export default ItemListContainer;
