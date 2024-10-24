@@ -5,7 +5,7 @@ const productos = [
         descripcion:"",
         caracteristicas:"hola",
         precio: 100,
-        categotia: "hola",
+        categoria: "pc",
         stock: 10,
         imagen: "https://http2.mlstatic.com/D_NQ_NP_750454-MLA77598323063_072024-O.webp"
     },
@@ -15,7 +15,7 @@ const productos = [
         descripcion:"",
         caracteristicas:"hola",
         precio: 100,
-        categotia: "hola",
+        categoria: "pc",
         stock: 10,
         imagen: "https://http2.mlstatic.com/D_NQ_NP_750454-MLA77598323063_072024-O.webp"
     },
@@ -25,7 +25,7 @@ const productos = [
         descripcion:"",
         caracteristicas:"hola",
         precio: 100,
-        categotia: "compu",
+        categoria: "celulares",
         stock: 10,
         imagen: "https://http2.mlstatic.com/D_NQ_NP_750454-MLA77598323063_072024-O.webp"
     },
@@ -35,7 +35,7 @@ const productos = [
         descripcion:"",
         caracteristicas:"hola",
         precio: 100,
-        categotia: "compu",
+        categoria: "televisores",
         stock: 10,
         imagen: "https://http2.mlstatic.com/D_NQ_NP_750454-MLA77598323063_072024-O.webp"
     },
@@ -45,7 +45,7 @@ const productos = [
         descripcion:"",
         caracteristicas:"hola",
         precio: 100,
-        categotia: "compu",
+        categoria: "componentes",
         stock: 10,
         imagen: "https://http2.mlstatic.com/D_NQ_NP_750454-MLA77598323063_072024-O.webp"
     },
@@ -55,7 +55,7 @@ const productos = [
         descripcion:"",
         caracteristicas:"hola",
         precio: 100,
-        categotia: "play",
+        categoria: "playstation",
         stock: 10,
         imagen: "https://http2.mlstatic.com/D_NQ_NP_750454-MLA77598323063_072024-O.webp"
     },
@@ -65,7 +65,7 @@ const productos = [
         descripcion:"",
         caracteristicas:"hola",
         precio: 100,
-        categotia: "Play",
+        categoria: "playstation",
         stock: 10,
         imagen: "https://http2.mlstatic.com/D_NQ_NP_750454-MLA77598323063_072024-O.webp"
     },
@@ -75,7 +75,7 @@ const productos = [
         descripcion:"",
         caracteristicas:"hola",
         precio: 100,
-        categotia: "saludo",
+        categoria: "playstation",
         stock: 10,
         imagen: "https://http2.mlstatic.com/D_NQ_NP_750454-MLA77598323063_072024-O.webp"
     },
