@@ -1,27 +1,31 @@
-import { useState, useEffect } from "react"
-import obtenerProductos from "../data/productos.js"
-import ItemDetail from "./ItemDetail.jsx"
-import ItemCount from "../ItemCount/ItemCount.jsx"
+import { useState, useEffect } from "react";
+import obtenerProductos from "../data/productos.js";
+import ItemDetail from "./ItemDetail.jsx";
+import ItemCount from "../ItemCount/ItemCount.jsx";
+import { useParams } from "react-router-dom";
 
 const ItemDetailContainer = () => {
-    const [producto, setProducto, agregarAlCarrito] = useState({})
+    const [producto, setProducto] = useState({});
+    const { idProducto } = useParams();
 
-    useEffect(() =>{
-
+    useEffect(() => {
         obtenerProductos()
             .then((data) => {
-                const productoEncontrado = data.find( (productoData) => productoData.id === 2 )
-                setProducto(productoEncontrado)
-            })
-    },[])
+                const productoEncontrado = data.find((productoData) => productoData.id === Number(idProducto));
+                setProducto(productoEncontrado);
+            });
+    }, [idProducto]);  
 
-  return (
-    <div>
-        <ItemDetail producto = {producto}/>
-        <ItemCount stock={7} agregarAlCarrito={agregarAlCarrito} />
-    </div>
-    
-  )
-}
+    const agregarAlCarrito = () => {
+        console.log("Producto agregado al carrito:", producto);
+    };
 
-export default ItemDetailContainer
+    return (
+        <div>
+            <ItemDetail producto={producto} />
+            
+        </div>
+    );
+};
+
+export default ItemDetailContainer;

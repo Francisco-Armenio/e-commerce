@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Item = ({ producto }) => {
 
     if (!producto) {
@@ -10,12 +12,11 @@ const Item = ({ producto }) => {
                 <img src={producto.imagen} alt={producto.nombre} className="product-card-image" />
                 <div className="product-card-info">
                     <h2 className="product-card-title">{producto.nombre}</h2>
-                    <p className="product-card-description">{producto.descripcion}</p>
+                    <p className="product-card-description">{producto.caracteristicas}</p>
                     <div className="product-card-price">
                         <span className="product-card-price-current">${producto.precio}</span>
-                        <span className="product-card-price-old">${producto.precio}</span>
                     </div>
-                    <button className="product-card-button">Agregar al Carrito</button>
+                    <Link to={"/detalle/" + producto.id} className="product-card-button">Agregar al Carrito</Link>
                 </div>
             </div>
         
