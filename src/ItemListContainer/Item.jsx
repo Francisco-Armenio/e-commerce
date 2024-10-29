@@ -16,7 +16,7 @@ const Item = ({ producto }) => {
                     <div className="product-card-price">
                         <span className="product-card-price-current">${producto.precio}</span>
                     </div>
-                    <Link to={"/detalle/" + producto.id} className="product-card-button">Agregar al Carrito</Link>
+                    <Link to={"/detalle/" + producto.id} className="product-card-button">Ver detalle</Link>
                 </div>
             </div>
         

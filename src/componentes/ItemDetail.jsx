@@ -4,9 +4,15 @@ const ItemDetail = ({ producto, agregarAlCarrito }) => {
     if (!producto || !producto.nombre) {
         return <div>Cargando...</div>;
     }
+    
+    const handleAgregarAlCarrito = (contador) => {
+        const productoCarrito = {...producto, cantidad: contador}
+        console.log(productoCarrito);
+        
+    };
 
-    // Definimos `detallesDescripcion` dividiendo la descripción del producto en líneas
-    const detallesDescripcion = producto.descripcion?.split("-").filter((item) => item);
+    const detallesDescripcion = producto.descripcion.split('.').filter(item => item.trim() !== '');
+    const detallesCaracteristicas = producto.caracteristicas.split('-').filter(item => item.trim() !== '');
 
     return (
         <div className="contenido-productos-itemcount">
@@ -21,59 +27,35 @@ const ItemDetail = ({ producto, agregarAlCarrito }) => {
                     <h2 className="producto-nombre-info">{producto.nombreinfo}</h2>
                     <p className="producto-precio-info">${producto.precio}</p>
                     <p className="producto-color-info">Color: {producto.color}</p>
-                    <p className="producto-descripcion-info">{producto.descripcion}</p>
+                    <h3>Lo que tenés que saber de este producto:</h3>
+                    <ul className="producto-descripcion-info">
+                        {detallesDescripcion.map((detalle, index) => (
+                            <li key={index}>{detalle.trim()}</li>
+                        ))}
+                    </ul>
+                    <h3>Características:</h3>
+                    <ul className="producto-caracteristicas-info">
+                        {detallesCaracteristicas.map((caracteristica, index) => (
+                            <li key={index}>{caracteristica.trim()}</li>
+                        ))}
+                    </ul>
                 </div>
             </div>
 
             <div className="seccion-derecha">            
-                <ItemCount stock={7} agregarAlCarrito={agregarAlCarrito} />              
+                <ItemCount stock={producto.stock} agregarAlCarrito={handleAgregarAlCarrito} />              
             </div>
         </div>
-
-
     );
 };
 
 export default ItemDetail;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*<div className="product-detail">
-      <div className="product-image-detail">
-        <img className="product-imagen-info" src={producto.imagen} alt={producto.nombre} />
-      </div>
-      <div className="product-info">
-        <h2 className="product-nombre-info">{producto.nombre}</h2>
-        <p className="product-descripcion-info">{producto.descripcion}</p>
-        <p className="product-precio-info">${producto.precio}</p>
-        {producto.descuento && <span className="badge">Descuento {producto.descuento}%</span>}
-        <p className="product-precio-info">{producto.stock > 0 ? `Stock disponible: ${producto.stock}` : "Producto agotado"}</p>
-        <button className="boton-de-compra-info" onClick={agregarAlCarrito} disabled={producto.stock === 0}>Agregar al Carrito</button>
-        <ItemCount stock={7} agregarAlCarrito={agregarAlCarrito} />
-      </div>
-    </div>*/
+/*
+<h3>Características:</h3>
+                    <ul className="producto-caracteristicas-info">
+                        {detallesCaracteristicas.map((caracteristica, index) => (
+                            <li key={index}>{caracteristica.trim()}</li>
+                        ))}
+                    </ul>*/

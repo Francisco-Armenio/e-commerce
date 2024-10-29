@@ -2,6 +2,7 @@ const productos = [
     {
         id: 1,
         nombre: "hola",
+        nombreinfo:"Sony PlayStation 2 Slim Gran Turismo 4 Edition color charcoal black",
         color: "Charcoal black",
         descripcion:"",
         caracteristicas:"hola",
@@ -13,6 +14,8 @@ const productos = [
     {
         id: 2,
         nombre: "chau",
+        nombreinfo:"Sony PlayStation 2 Slim Gran Turismo 4 Edition color charcoal black",
+        color: "Charcoal black",
         descripcion:"",
         caracteristicas:"hola",
         precio: 100,
@@ -23,6 +26,8 @@ const productos = [
     {
         id: 3,
         nombre: "compu",
+        nombreinfo:"Sony PlayStation 2 Slim Gran Turismo 4 Edition color charcoal black",
+        color: "Charcoal black",
         descripcion:"",
         caracteristicas:"hola",
         precio: 100,
@@ -33,6 +38,8 @@ const productos = [
     {
         id: 4,
         nombre: "mouse",
+        nombreinfo:"Sony PlayStation 2 Slim Gran Turismo 4 Edition color charcoal black",
+        color: "Charcoal black",
         descripcion:"",
         caracteristicas:"hola",
         precio: 100,
@@ -43,6 +50,8 @@ const productos = [
     {
         id: 5,
         nombre: "teclado",
+        nombreinfo:"Sony PlayStation 2 Slim Gran Turismo 4 Edition color charcoal black",
+        color: "Charcoal black",
         descripcion:"",
         caracteristicas:"hola",
         precio: 100,
@@ -53,6 +62,8 @@ const productos = [
     {
         id: 6,
         nombre: "Play",
+        nombreinfo:"Sony PlayStation 2 Slim Gran Turismo 4 Edition color charcoal black",
+        color: "Charcoal black",
         descripcion:"",
         caracteristicas:"hola",
         precio: 100,
@@ -65,7 +76,7 @@ const productos = [
         nombre: "PlayStation 2",
         nombreinfo:"Sony PlayStation 2 Slim Gran Turismo 4 Edition color charcoal black",
         color: "Charcoal black",
-        descripcion:"La PlayStation 2 (PS2) es una consola de videojuegos desarrollada por Sony, lanzada en el año 2000. Esta icónica consola revolucionó la industria del entretenimiento con su vasta colección de juegos, potente rendimiento y capacidades multimedia. Desde su lanzamiento, ha sido la favorita de millones de jugadores en todo el mundo, convirtiéndose en una de las consolas más vendidas de todos los tiempos.",
+        descripcion:"Incluye control.Resolución de 1920px x 1080px.Memoria RAM de 32MB.",
         caracteristicas:"hola",
         precio: 189.999,
         categoria: "playstation",
@@ -75,6 +86,8 @@ const productos = [
     {
         id: 8,
         nombre: "saludo",
+        nombreinfo:"Sony PlayStation 2 Slim Gran Turismo 4 Edition color charcoal black",
+        color: "Charcoal black",
         descripcion:"",
         caracteristicas:"hola",
         precio: 100,
