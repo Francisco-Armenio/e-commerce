@@ -16,25 +16,23 @@ const ItemDetail = ({ producto, agregarAlCarrito }) => {
 
     return (
         <div className="contenido-productos-itemcount">
-            <div className="seccion-izquierda">
-                <div className="contenido-imagen-grande">
-                    <img className="product-imagen-info" src={producto.imagen} alt={producto.nombre} />
+                <div className="detalle-imagen">
+                    <img className="producto-imagen-info" src={producto.imagen} alt={producto.nombre} />
                 </div>
-            </div>
 
-            <div className="seccion-centro">
+            <div className="detalle-producto">
                 <div className="contenido-informacion-producto">
-                    <h2 className="producto-nombre-info">{producto.nombreinfo}</h2>
-                    <p className="producto-precio-info">${producto.precio}</p>
-                    <p className="producto-color-info">Color: {producto.color}</p>
-                    <h3>Lo que tenés que saber de este producto:</h3>
-                    <ul className="producto-descripcion-info">
+                    <h2 className="info-nombre">{producto.nombreinfo}</h2>
+                    <p className="info-precio">${producto.precio}</p>
+                    <p className="info-color">Color: {producto.color}</p>
+                    <h3 className="informacion-contenido">Lo que tenés que saber de este producto:</h3>
+                    <ul className="contenido-product">
                         {detallesDescripcion.map((detalle, index) => (
                             <li key={index}>{detalle.trim()}</li>
                         ))}
                     </ul>
-                    <h3>Características:</h3>
-                    <ul className="producto-caracteristicas-info">
+                    <h3 className="caracteristicas-contenido">Características:</h3>
+                    <ul className="caracteristicas-product">
                         {detallesCaracteristicas.map((caracteristica, index) => (
                             <li key={index}>{caracteristica.trim()}</li>
                         ))}
@@ -42,9 +40,9 @@ const ItemDetail = ({ producto, agregarAlCarrito }) => {
                 </div>
             </div>
 
-            <div className="seccion-derecha">            
-                <ItemCount stock={producto.stock} agregarAlCarrito={handleAgregarAlCarrito} />              
-            </div>
+                        
+            <ItemCount stock={producto.stock} agregarAlCarrito={handleAgregarAlCarrito} />              
+            
         </div>
     );
 };

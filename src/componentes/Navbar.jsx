@@ -1,22 +1,20 @@
 import '../index.css'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faCartShopping } from "@fortawesome/free-solid-svg-icons/faCartShopping"
+
 import { Link } from 'react-router-dom'
+import CardWidget from './CardWidget'
 
 const Navbar = () =>{
 
     return(
         <nav className="navbar">
     <div className="navbar-superior">
-        <h1 className="navbar-titulo">
-            <Link to="/">NextGen Tech</Link>
+        <h1>
+            <Link to="/" className="navbar-titulo">NextGen Tech</Link>
         </h1>
         <input type="text" className="buscador-navbar" id="buscador" placeholder="Buscar productos" />
-        <div className="carrito">
-            <span className="carrito-cantidad">0</span>
-            <Link to="/carrito" className="carrito-icono">
-                <FontAwesomeIcon icon={faCartShopping} />
-            </Link>
+        
+        <div>
+            <CardWidget/>
         </div>
     </div>
     <div className="navbar-inferior">
