@@ -347,56 +347,48 @@
 /* Contenedor del botón de stock */
 .boton-stock {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 10px;
-  margin-top: 20px;
+  gap: 10px; /* Espacio entre los botones */
 }
 
-/* Botones de aumentar y disminuir */
-.boton-restar,
-.boton-sumar {
-  width: 40px;
-  height: 40px;
-  font-size: 1.5rem;
-  background-color: #f0f0f0;
-  color: #333;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.boton-restar:hover,
-.boton-sumar:hover {
-  background-color: #e0e0e0;
-}
-
-/* Contador */
-.boton-count {
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: #333;
-  width: 40px;
-  text-align: center;
-}
-
-/* Botón "Agregar al carrito" */
 .boton-comprar {
+  background-color: #d81b60; /* Color rosa para el botón de compra */
+  color: #fff;
   padding: 10px 20px;
-  font-size: 1rem;
-  background-color: #d81b60;
-  color: white;
   border: none;
-  border-radius: 25px;
+  border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 16px;
 }
 
-.boton-comprar:hover {
-  background-color: #c2185b;
-  transform: scale(1.05);
+.favoritos {
+  background-color: transparent; /* Sin color de fondo */
+  color: #000;
+  padding: 10px 20px;
+  border: 1px solid #d81b60;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
+.contador {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
 
+.boton-restar, .boton-sumar {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 18px;
+}
 
-
+.boton-count {
+  font-size: 18px;
+  font-weight: bold;
+}

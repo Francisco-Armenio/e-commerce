@@ -1,8 +1,9 @@
 
 import React, { useState } from 'react';
 
-const ItemCount = ({ stock, agregarAlCarrito }) => {
-    const [count, setCount] = useState(1); 
+const ItemCount = ({ stock, agregarAlCarrito, agregarFavoritos }) => {
+    const [count, setCount] = useState(1);
+    
 
     const aumentar = () => {
         if (count < stock) {
@@ -18,11 +19,16 @@ const ItemCount = ({ stock, agregarAlCarrito }) => {
 
     return (
         <div className='boton-stock'>
-            <button className='boton-restar' onClick={disminuir}>-</button>
-            <p className='boton-count'>{count}</p>
-            <button className='boton-sumar' onClick={aumentar}>+</button>
             <button className='boton-comprar' onClick={() => agregarAlCarrito(count)}>Agregar al carrito</button>
+            <button className='favoritos' onClick={() => agregarFavoritos(count)}>Agregar a Favoritos</button>
+
+            <div className='contador'>
+                <button className='boton-restar' onClick={disminuir}>-</button>
+                <p className='boton-count'>{count}</p>
+                <button className='boton-sumar' onClick={aumentar}>+</button>
+            </div>
         </div>
+
     );
 };
 

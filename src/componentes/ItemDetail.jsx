@@ -1,14 +1,23 @@
 import ItemCount from "../ItemCount/ItemCount";
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
+import { FavoritosContext } from "../context/CartContext"; 
 
 const ItemDetail = ({ producto, agregarAlCarrito }) => {
+    const { agregarProducto } = useContext(CartContext);
+    const { toggleFavorito } = useContext(FavoritosContext); 
+
     if (!producto || !producto.nombre) {
         return <div>Cargando...</div>;
     }
     
     const handleAgregarAlCarrito = (contador) => {
-        const productoCarrito = {...producto, cantidad: contador}
-        console.log(productoCarrito);
-        
+        const productoCarrito = { ...producto, cantidad: contador };
+        agregarProducto(productoCarrito);
+    };
+
+    const handleAgregarAFavoritos = () => {
+        toggleFavorito(producto); 
     };
 
     const detallesDescripcion = producto.descripcion.split('.').filter(item => item.trim() !== '');
@@ -16,9 +25,9 @@ const ItemDetail = ({ producto, agregarAlCarrito }) => {
 
     return (
         <div className="contenido-productos-itemcount">
-                <div className="detalle-imagen">
-                    <img className="producto-imagen-info" src={producto.imagen} alt={producto.nombre} />
-                </div>
+            <div className="detalle-imagen">
+                <img className="producto-imagen-info" src={producto.imagen} alt={producto.nombre} />
+            </div>
 
             <div className="detalle-producto">
                 <div className="contenido-informacion-producto">
@@ -40,20 +49,11 @@ const ItemDetail = ({ producto, agregarAlCarrito }) => {
                 </div>
             </div>
 
-                        
-            <ItemCount stock={producto.stock} agregarAlCarrito={handleAgregarAlCarrito} />              
+            <ItemCount stock={producto.stock} agregarAlCarrito={handleAgregarAlCarrito} agregarFavoritos={handleAgregarAFavoritos}/>
+
             
         </div>
     );
 };
 
 export default ItemDetail;
-
-
-/*
-<h3>Características:</h3>
-                    <ul className="producto-caracteristicas-info">
-                        {detallesCaracteristicas.map((caracteristica, index) => (
-                            <li key={index}>{caracteristica.trim()}</li>
-                        ))}
-                    </ul>*/

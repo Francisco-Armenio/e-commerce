@@ -78,7 +78,7 @@ const productos = [
         color: "Charcoal black",
         descripcion:"Incluye control.Resolución de 1920px x 1080px.Memoria RAM de 32MB.",
         caracteristicas:"hola",
-        precio: 189.999,
+        precio: 190000,
         categoria: "playstation",
         stock: 2,
         imagen: "https://http2.mlstatic.com/D_NQ_NP_782879-MLA41084675558_032020-O.webp"
