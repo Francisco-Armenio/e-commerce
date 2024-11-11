@@ -4,6 +4,14 @@ import { CartContext } from "../../context/CartContext";
 const Cart = () => {
     const { carrito, precioTotal, borrarProducto, vaciarCarrito } = useContext(CartContext);
 
+    if(carrito.length === 0){
+        return(
+            <div>
+                <h2>hola</h2>
+            </div>
+        )
+    }
+
     return (
         <div>
             {

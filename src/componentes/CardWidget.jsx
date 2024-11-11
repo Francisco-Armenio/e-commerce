@@ -7,9 +7,11 @@ import { CartContext } from "../context/CartContext"
 const CardWidget = () => {
   const { cantidadTotal}  = useContext(CartContext)
 
+  let cantidad = cantidadTotal()
+
   return (
     <div className="carrito">
-            <span className="carrito-cantidad">{ cantidadTotal() }</span>
+            <span className="carrito-cantidad">{ cantidad > 0 && cantidad }</span>
             <Link to="/cart" className="carrito-icono">
                 <FontAwesomeIcon icon={faCartShopping} />
             </Link>
