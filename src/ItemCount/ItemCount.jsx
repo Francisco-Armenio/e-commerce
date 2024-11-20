@@ -20,7 +20,6 @@ const ItemCount = ({ stock, agregarAlCarrito, agregarFavoritos }) => {
     return (
         <div className='boton-stock'>
             <button className='boton-comprar' onClick={() => agregarAlCarrito(count)}>Agregar al carrito</button>
-            <button className='favoritos' onClick={() => agregarFavoritos(count)}>Agregar a Favoritos</button>
 
             <div className='contador'>
                 <button className='boton-restar' onClick={disminuir}>-</button>

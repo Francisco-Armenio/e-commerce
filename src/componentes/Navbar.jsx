@@ -1,5 +1,4 @@
 import '../index.css'
-
 import { Link } from 'react-router-dom'
 import CardWidget from './CardWidget'
 
@@ -11,7 +10,8 @@ const Navbar = () =>{
         <h1>
             <Link to="/" className="navbar-titulo">NextGen Tech</Link>
         </h1>
-        <input type="text" className="buscador-navbar" id="buscador" placeholder="Buscar productos" />
+        
+        <input type="text" className="buscador-navbar" id="buscador" placeholder="Buscar productos..." />
         
         <div>
             <CardWidget/>
@@ -38,7 +38,6 @@ const Navbar = () =>{
             </ul>
         </div>
         <div className="navbar-menu-derecha">
-            <Link to="/favoritos" className="navbar-menu-item-link">Favoritos</Link>
         </div>
     </div>
 </nav>
