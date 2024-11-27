@@ -37,7 +37,7 @@ const productos = [
     },
     {
         id: 4,
-        nombre: "mouse",
+        nombre: "PC",
         nombreinfo:"Sony PlayStation 2 Slim Gran Turismo 4 Edition color charcoal black",
         color: "Charcoal black",
         descripcion:"",
@@ -50,7 +50,7 @@ const productos = [
     },
     {
         id: 5,
-        nombre: "teclado",
+        nombre: "PC",
         nombreinfo:"Sony PlayStation 2 Slim Gran Turismo 4 Edition color charcoal black",
         color: "Charcoal black",
         descripcion:"",
@@ -63,7 +63,7 @@ const productos = [
     },
     {
         id: 6,
-        nombre: "Play",
+        nombre: "PC",
         nombreinfo:"Sony PlayStation 2 Slim Gran Turismo 4 Edition color charcoal black",
         color: "Charcoal black",
         descripcion:"",
@@ -89,7 +89,7 @@ const productos = [
     },
     {
         id: 8,
-        nombre: "saludo",
+        nombre: "PC",
         nombreinfo:"Sony PlayStation 2 Slim Gran Turismo 4 Edition color charcoal black",
         color: "Charcoal black",
         descripcion:"",
@@ -102,7 +102,7 @@ const productos = [
     },
     {
         id: 9,
-        nombre: "saludo",
+        nombre: "PC",
         nombreinfo:"Sony PlayStation 2 Slim Gran Turismo 4 Edition color charcoal black",
         color: "Charcoal black",
         descripcion:"",
@@ -115,7 +115,7 @@ const productos = [
     },
     {
         id: 10,
-        nombre: "saludo",
+        nombre: "PC",
         nombreinfo:"Sony PlayStation 2 Slim Gran Turismo 4 Edition color charcoal black",
         color: "Charcoal black",
         descripcion:"",
@@ -128,7 +128,7 @@ const productos = [
     },
     {
         id: 11,
-        nombre: "saludo",
+        nombre: "PC",
         nombreinfo:"Sony PlayStation 2 Slim Gran Turismo 4 Edition color charcoal black",
         color: "Charcoal black",
         descripcion:"",
@@ -141,7 +141,7 @@ const productos = [
     },
     {
         id: 12,
-        nombre: "saludo",
+        nombre: "PC",
         nombreinfo:"Sony PlayStation 2 Slim Gran Turismo 4 Edition color charcoal black",
         color: "Charcoal black",
         descripcion:"",
@@ -154,7 +154,7 @@ const productos = [
     },
     {
         id: 13,
-        nombre: "saludo",
+        nombre: "PC",
         nombreinfo:"Sony PlayStation 2 Slim Gran Turismo 4 Edition color charcoal black",
         color: "Charcoal black",
         descripcion:"",
@@ -167,7 +167,7 @@ const productos = [
     },
     {
         id: 14,
-        nombre: "saludo",
+        nombre: "PC",
         nombreinfo:"Sony PlayStation 2 Slim Gran Turismo 4 Edition color charcoal black",
         color: "Charcoal black",
         descripcion:"",
@@ -180,7 +180,7 @@ const productos = [
     },
     {
         id: 15,
-        nombre: "saludo",
+        nombre: "PC",
         nombreinfo:"Sony PlayStation 2 Slim Gran Turismo 4 Edition color charcoal black",
         color: "Charcoal black",
         descripcion:"",
@@ -193,7 +193,7 @@ const productos = [
     },
     {
         id: 16,
-        nombre: "saludo",
+        nombre: "PC",
         nombreinfo:"Sony PlayStation 2 Slim Gran Turismo 4 Edition color charcoal black",
         color: "Charcoal black",
         descripcion:"",
@@ -206,7 +206,7 @@ const productos = [
     },
     {
         id: 17,
-        nombre: "saludo",
+        nombre: "PC",
         nombreinfo:"Sony PlayStation 2 Slim Gran Turismo 4 Edition color charcoal black",
         color: "Charcoal black",
         descripcion:"",
@@ -219,7 +219,7 @@ const productos = [
     },
     {
         id: 18,
-        nombre: "saludo",
+        nombre: "PC",
         nombreinfo:"Sony PlayStation 2 Slim Gran Turismo 4 Edition color charcoal black",
         color: "Charcoal black",
         descripcion:"",
@@ -232,7 +232,7 @@ const productos = [
     },
     {
         id: 19,
-        nombre: "saludo",
+        nombre: "PC",
         nombreinfo:"Sony PlayStation 2 Slim Gran Turismo 4 Edition color charcoal black",
         color: "Charcoal black",
         descripcion:"",
@@ -245,7 +245,7 @@ const productos = [
     },
     {
         id: 20,
-        nombre: "saludo",
+        nombre: "PC",
         nombreinfo:"Sony PlayStation 2 Slim Gran Turismo 4 Edition color charcoal black",
         color: "Charcoal black",
         descripcion:"",

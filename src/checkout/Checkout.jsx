@@ -10,7 +10,7 @@ const Checkout = () => {
     email: "",
   });
   const { carrito, precioTotal, vaciarCarrito } = useContext(CartContext);
-  const [compraRealizada, setCompraRealizada] = useState(false); // Estado para controlar el mensaje de agradecimiento
+  const [compraRealizada, setCompraRealizada] = useState(false); 
   const navigate = useNavigate();
 
   const handleChangeInput = (event) => {
@@ -26,12 +26,10 @@ const Checkout = () => {
       total: precioTotal(),
     };
 
-    console.log(orden); // Aquí puedes agregar lógica para enviar los datos a un servidor si lo deseas
+    console.log(orden); 
 
-    // Vaciar el carrito después de la compra
     vaciarCarrito();
 
-    // Cambiar el estado para mostrar el mensaje de agradecimiento
     setCompraRealizada(true);
   };
 
@@ -45,9 +43,9 @@ const Checkout = () => {
         />
       ) : (
         <div className="mensaje-agradecimiento">
-          <h2>¡Gracias por tu compra!</h2>
-          <p>Tu pedido ha sido procesado con éxito.</p>
-          <button onClick={() => navigate("/")}>Volver al inicio</button>
+          <h2 className="texto-compra">¡Gracias por tu compra!</h2>
+          <p className="parrafo-de-aviso">Tu pedido ha sido procesado con éxito.</p>
+          <button onClick={() => navigate("/")} className="volver-pagina-principal">Volver al inicio</button>
         </div>
       )}
     </div>

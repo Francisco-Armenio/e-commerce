@@ -10,9 +10,6 @@ const Navbar = () =>{
         <h1>
             <Link to="/" className="navbar-titulo">NextGen Tech</Link>
         </h1>
-        
-        <input type="text" className="buscador-navbar" id="buscador" placeholder="Buscar productos..." />
-        
         <div>
             <CardWidget/>
         </div>

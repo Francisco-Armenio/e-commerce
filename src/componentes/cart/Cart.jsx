@@ -31,9 +31,9 @@ const Cart = () => {
                 ))
             }
             <div className="parte-baja-del-carrito-lleno">
-                <h2 className="total-valor-productos">Precio total: ${precioTotal()}</h2>
                 <button className="borrar-carrito-completo" onClick={vaciarCarrito}>Vaciar Carrito</button>
-                <Link to="/checkout">confirmar compra</Link>
+                <h2 className="total-valor-productos">Precio total: ${precioTotal()}</h2>
+                <Link to="/checkout" className="comprobar-compra">Comprar ahora</Link>
             </div>
         </div>
     );
