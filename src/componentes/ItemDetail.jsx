@@ -1,11 +1,14 @@
+import { useState, useContext } from "react";
+import { Link } from "react-router-dom";
 import ItemCount from "../ItemCount/ItemCount";
-import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import { FavoritosContext } from "../context/CartContext";
 
 const ItemDetail = ({ producto }) => {
   const { agregarProducto } = useContext(CartContext);
   const { toggleFavorito } = useContext(FavoritosContext);
+
+  const [mostrarItemCount, setMostrarItemCount] = useState(true);
 
   if (!producto || !producto.nombre) {
     return <div>Cargando...</div>;
@@ -14,6 +17,7 @@ const ItemDetail = ({ producto }) => {
   const handleAgregarAlCarrito = (contador) => {
     const productoCarrito = { ...producto, cantidad: contador };
     agregarProducto(productoCarrito);
+    setMostrarItemCount(false); 
   };
 
   const handleAgregarAFavoritos = () => {
@@ -41,7 +45,7 @@ const ItemDetail = ({ producto }) => {
         <div className="contenido-informacion-producto">
           <h2 className="info-nombre">{producto.nombreinfo}</h2>
           <p className="info-precio">${producto.precio}</p>
-          
+
           <h3 className="caracteristicas-contenido">Características:</h3>
           <ul className="caracteristicas-product">
             {detallesCaracteristicas.map((caracteristica, index) => (
@@ -59,11 +63,23 @@ const ItemDetail = ({ producto }) => {
         </div>
       </div>
 
-      <ItemCount
-        stock={producto.stock}
-        agregarAlCarrito={handleAgregarAlCarrito}
-        agregarFavoritos={handleAgregarAFavoritos}
-      />
+      <div className="botones-mostrar-esconder">
+      {
+        mostrarItemCount ? (
+          <ItemCount
+            stock={producto.stock}
+            agregarAlCarrito={handleAgregarAlCarrito}
+          />
+        ) : (
+          <>
+          <div className="botones-invisibles">
+          <Link to="/cart" className="button-invisible-ir-al-carrito">Ir al carrito</Link>
+          <Link to="/" className="button-invisible-seguir-comprando">Seguir comprando</Link>
+          </div>
+          </>
+        )
+      }
+      </div>
     </div>
   );
 };
