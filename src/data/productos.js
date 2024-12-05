@@ -37,16 +37,15 @@ const productos = [
     },
     {
         id: 4,
-        nombre: "PC",
-        nombreinfo:"Sony PlayStation 2 Slim Gran Turismo 4 Edition color charcoal black",
-        color: "Charcoal black",
-        descripcion:"",
-        caracteristicas:"hola",
-        datos:"dada",
-        precio: 100,
+        nombre: "Smart Tv",
+        nombreinfo:"Smart Tv Tcl L43s5400 Full HD 43 Pulgadas Android Tv Google Assistant Negro",
+        descripcion:"Tamaño de la pantalla: 43.Resolución: Full HD.Es smart: Sí.Cantidad de puertos HDMI: 2.Tipo de pantalla: LED.Aplicaciones integradas: Prime Video, Disney+, Flow, HBO, Netflix, Spotify, YouTube",
+        caracteristicas:"Tamaño de la pantalla: 43. Su resolución es Full HD.Tecnología HDR para una calidad de imagen mejorada.Modo de sonido: Dolby Digital.Manejalo por comando de voz.Con Prime Video.Google Assistant incorporado.Sistema operativo Android.Capacidad de almacenamiento de 8GB.Conectá tus dispositivos mediante sus 2 puertos HDMI y sus 2 puertos USB.Entretenimiento y conectividad en un mismo lugar.",
+        datos:"Mismo precio en 6 cuotas de $73.333,17",
+        precio: 439000,
         categoria: "televisores",
-        stock: 10,
-        imagen: "https://http2.mlstatic.com/D_NQ_NP_750454-MLA77598323063_072024-O.webp"
+        stock: 50,
+        imagen: "https://http2.mlstatic.com/D_NQ_NP_925628-MLU74196174227_012024-O.webp"
     },
     {
         id: 5,
