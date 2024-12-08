@@ -49,13 +49,12 @@ const productos = [
     },
     {
         id: 5,
-        nombre: "PC",
-        nombreinfo:"Sony PlayStation 2 Slim Gran Turismo 4 Edition color charcoal black",
-        color: "Charcoal black",
+        nombre: "Fuente Cooler",
+        nombreinfo:"Fuente Cooler Master 850w 80 Plus Gold Full Modular Gx2 Mpx-8503-afag-2bar",
         descripcion:"Potencia de salida de 850W. Fuente de tipo ATX. Con certificación de eficiencia 80 Plus Gold. Diámetro del ventilador de 120mm. Refrigeración por aire.",
         caracteristicas:"Producto: Fuente Cooler Master 850W 80 Plus Gold Full Modular GX2 MPX-8503-AFAG-2BAR. Especificaciones Tecnicas: - Marca : Cooler Master. - Modelo : GX II Gold 850. - P/N : MPX-8503-AFAG-2BAR. - Entrada CA : 100-240V. - Frecuencia Entrada CA : 50-60 Hz. - Voltaje Entrada CA : 100-240V. - Corrección del Factor de Potencia : PFC Activo. - Eficiencia a Carga Típica : = 90%. - Potencia Maxima de Salida : 850W. - Salida Maxima de Corriente -12V : 0,3A. - Potencia Maxima -12V : 3,6W. - Rail de +12V : Único. - Salida Maxima de Corriente +12V1 : 70,8A. - Potencia Maxima +12V1 : 849,6W. - Salida Maxima de Corriente +3,3V : 20A. - Salida Maxima de Corriente +5V : 20A. - Potencia Maxima +3,3V & +5V : 120W. - Salida Maxima de Corriente +5VSB : 3A. - Potencia Maxima +5VSB : 15W. - CONECTORES : ATX 24 Pin x1, EPS 4+4 Pin x1, EPS 8 Pin x1, SATA(x2) x6, Peripheral 4 Pin x2, PCI-e 6+2 Pin x4, 12VHPWR x1. - Tamaño del Fan Cooler : 120mm. - Dimensiones de la fuente : 160 x 150 x 86 mm. - Peso Neto : 2,614 kg. - Factor de Forma : ATX 12V Ver 3,0. - Peso Bruto : 3,004 kg. - Dimensiones de la Caja : 320 x 195 x 125 mm. - Protecciones : OPP, OVP, OTP, OCP, SCP, UVP, Protección contra sobretensiones y picos de corriente. - Power Factor Corrector : PFC Activo. - 80 Plus : Gold.",
-        datos:"dada",
-        precio: 100,
+        datos:"en 6 cuotas de $37.702,12",
+        precio: 166000,
         categoria: "componentes",
         stock: 11,
         imagen: "https://http2.mlstatic.com/D_NQ_NP_941925-MLA80335190722_112024-O.webp"
