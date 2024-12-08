@@ -46,18 +46,18 @@ const ItemDetail = ({ producto }) => {
           <h2 className="info-nombre">{producto.nombreinfo}</h2>
           <p className="info-precio">${producto.precio}</p>
 
-          <h3 className="caracteristicas-contenido">Características:</h3>
-          <ul className="caracteristicas-product">
-            {detallesCaracteristicas.map((caracteristica, index) => (
-              <li key={index}>{caracteristica.trim()}</li>
-            ))}
-          </ul>
           <h3 className="informacion-contenido">
             Lo que tenés que saber de este producto:
           </h3>
           <ul className="contenido-product">
             {detallesDescripcion.map((detalle, index) => (
               <li key={index}>{detalle.trim()}</li>
+            ))}
+          </ul>
+          <h3 className="caracteristicas-contenido">Características:</h3>
+          <ul className="caracteristicas-product">
+            {detallesCaracteristicas.map((caracteristica, index) => (
+              <li key={index}>{caracteristica.trim()}</li>
             ))}
           </ul>
         </div>
