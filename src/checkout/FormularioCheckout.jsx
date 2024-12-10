@@ -29,6 +29,9 @@ const FormularioCheckout = ({ datosForm, handleChangeInput, handleSubmitForm }) 
                 value={datosForm.nombre}
                 onChange={handleChangeInput}
                 required
+                title="Por favor, ingresa su nombre."
+                onInvalid={(e) => e.target.setCustomValidity('Por favor, ingresa su nombre.')}
+                onInput={(e) => e.target.setCustomValidity('')}
             />
 
             <label className="confirmar-telefono">Teléfono:</label>
