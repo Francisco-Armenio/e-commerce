@@ -24,6 +24,7 @@ function App() {
           <Route path="/checkout" element={<Checkout/>}/>
         </Routes>
         
+        <Footer />
         
       </BrowserRouter>
     </CartProvider>

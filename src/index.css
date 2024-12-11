@@ -650,3 +650,59 @@ p {
 .volver-pagina-principal:hover {
   background-color: #c2185b;
 }
+
+/*footer*/
+
+.footer {
+  background-color: #333; 
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.proyecto {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.mis-contactos {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.mis-redes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.mi-gmail, .mi-linkedin, .mi-github {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.mi-gmail img, .mi-linkedin img, .mi-github img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.mi-linkedin {
+  color: #0077b5;
+}
+
+.mi-github {
+  color: #fff;
+}
+
+.derechos {
+  font-size: 14px;
+  margin-top: 20px;
+  color: #aaa;
+}
