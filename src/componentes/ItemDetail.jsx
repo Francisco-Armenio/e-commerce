@@ -20,10 +20,6 @@ const ItemDetail = ({ producto }) => {
     setMostrarItemCount(false); 
   };
 
-  const handleAgregarAFavoritos = () => {
-    toggleFavorito(producto);
-  };
-
   const detallesDescripcion = producto.descripcion
     .split(".")
     .filter((item) => item.trim() !== "");
