@@ -6,8 +6,16 @@
   font-weight: 300;
   font-style: normal;
 }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 /* Navbar */
-/* Estilo general */
 .navbar {
     display: flex;
     flex-direction: column;
@@ -233,7 +241,6 @@
     margin-bottom: 5px; 
 }
 
-
 /* informacion del producto */
 .contenido-productos-itemcount {
   display: flex;
@@ -436,18 +443,17 @@
   background-color: #af0c48; 
 }
 
-/*carrito lleno*/
-
+/* Carrito lleno */
 .carrito-lleno {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 20px;
-  margin-top: 20px; 
+  margin-top: 20px;
 }
 
 .parte-izquierda {
-  flex: 3; 
+  flex: 3;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -492,6 +498,11 @@
   transition: background-color 0.3s ease;
 }
 
+.parte-baja-del-carrito-lleno,
+.parte-derecha {
+  margin-bottom: 68px; 
+}
+
 .parte-baja-del-carrito-lleno {
   margin-top: 20px;
 }
@@ -511,7 +522,7 @@
 }
 
 .parte-derecha {
-  flex: 1; 
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -533,11 +544,11 @@
   background-color: #4daf52;
   color: white;
   text-decoration: none;
-  padding: 15px 30px;
+  padding: 15px 30px 25px; 
   border-radius: 5px;
   font-size: 1.1em;
   width: 100%;
-  max-width: 2000px;
+  max-width: 200px;
 }
 
 .comprobar-compra:hover {
@@ -652,13 +663,20 @@ p {
 }
 
 /*footer*/
+.contenedor-pagina {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
 
 .footer {
-  background-color: #333; 
+  background-color: #333;
   color: #fff;
   padding: 20px;
   text-align: center;
   font-family: Arial, sans-serif;
+  flex-shrink: 0; 
 }
 
 .proyecto {
@@ -705,4 +723,166 @@ p {
   font-size: 14px;
   margin-top: 20px;
   color: #aaa;
+}
+
+/* Diseño responsive para móviles */
+/*navbar*/
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .navbar-superior {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navbar-titulo {
+    font-size: 1.5rem;
+  }
+
+  .carrito {
+    margin-top: 10px;
+  }
+
+  .navbar-inferior {
+    flex-direction: column;
+    padding: 0;
+    margin-top: 10px;
+    border-top: none;
+  }
+
+  .navbar-menu-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .navbar-menu-item {
+    margin: 5px 0;
+  }
+
+  .navbar-menu-item-link {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    width: 90%; 
+  }
+}
+
+/*carrito lleno*/
+@media (max-width: 768px) {
+  .carrito-lleno {
+    padding: 10px;
+  }
+
+  .parte-izquierda,
+  .parte-derecha {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .carrito-lleno {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .parte-izquierda,
+  .parte-derecha {
+    width: 100%; 
+    margin-bottom: 20px;
+  }
+
+  .lista-productos-carrito {
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .imagen-de-producto {
+    width: 100px;
+    height: 100px;
+  }
+
+  .comprobar-compra {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .parte-izquierda,
+  .parte-derecha {
+    padding: 15px;
+  }
+
+  .imagen-de-producto {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/*info de los producto*/
+
+@media (max-width: 768px) {
+  .contenido-productos-itemcount {
+    flex-direction: column; 
+    gap: 20px;
+    padding: 15px;
+  }
+
+  .detalle-imagen {
+    max-width: 100%; 
+  }
+
+  .detalle-producto {
+    gap: 15px;
+  }
+
+  .info-nombre {
+    font-size: 1.8rem;
+  }
+
+  .info-precio {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contenido-productos-itemcount {
+    padding: 10px;
+  }
+
+  .info-nombre {
+    font-size: 1.5rem;
+  }
+
+  .info-precio {
+    font-size: 1.4rem;
+  }
+
+  .producto-imagen-info {
+    border-radius: 8px;
+  }
+
+  .informacion-contenido, .caracteristicas-contenido {
+    font-size: 1rem;
+    border-bottom: 1px solid #d81b60;
+  }
+
+  .contenido-product li, .caracteristicas-product li {
+    font-size: 0.9rem;
+  }
+
+  .button-invisible-ir-al-carrito,
+  .button-invisible-seguir-comprando {
+    font-size: 0.9em;
+    min-width: 120px;
+  }
 }

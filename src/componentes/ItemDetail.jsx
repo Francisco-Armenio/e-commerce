@@ -2,11 +2,9 @@ import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import ItemCount from "../ItemCount/ItemCount";
 import { CartContext } from "../context/CartContext";
-import { FavoritosContext } from "../context/CartContext";
 
 const ItemDetail = ({ producto }) => {
   const { agregarProducto } = useContext(CartContext);
-  const { toggleFavorito } = useContext(FavoritosContext);
 
   const [mostrarItemCount, setMostrarItemCount] = useState(true);
 
