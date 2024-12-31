@@ -34,8 +34,6 @@ const Navbar = () =>{
                 </li>
             </ul>
         </div>
-        <div className="navbar-menu-derecha">
-        </div>
     </div>
 </nav>
 
